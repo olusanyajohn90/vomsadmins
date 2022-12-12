@@ -38,7 +38,7 @@ class DashboardController extends Controller
         $sumvehicles = Vehicle::where('registration_state_id',$userstate->state_id)->count();
         $sumcertificates = Certificate::where('issue_state_id',$userstate->state_id)->count();
         $awaitinglicence = Certificate::where('issue_state_id',$userstate->state_id)->wherelicense_plate("Not Yet Assigned")->count();
-           dd($sumcertificates);
+        //    dd($sumcertificates);
 
 
 
@@ -49,7 +49,7 @@ class DashboardController extends Controller
 
 
 
-        // return view('admin.dashboard.all', compact('sumvehicles', 'sumcertificates', 'awaitinglicence'));
+         return view('admin.dashboard.all', compact('sumvehicles', 'sumcertificates', 'awaitinglicence'));
     }
 
 
