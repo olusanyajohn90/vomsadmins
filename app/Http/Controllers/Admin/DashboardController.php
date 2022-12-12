@@ -50,7 +50,7 @@ class DashboardController extends Controller
 
 
 
-         return view('admin.dashboard.all', compact('sumvehicles', 'sumcertificates', 'awaitinglicence'));
+         return view::make('admin.dashboard.all', compact('sumvehicles', 'sumcertificates', 'awaitinglicence'));
     }
 
 
