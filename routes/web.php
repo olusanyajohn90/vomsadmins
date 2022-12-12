@@ -62,7 +62,7 @@ Route::get('/home', [DashboardController::class, 'index'])->name('home');
 Route::get('admin/home', [AdminController::class, 'index']);
 // Route::get('admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
 // Route::post('admin', 'Admin\LoginController@login');
-//         // Password Reset Routes...
+        // Password Reset Routes...
 // Route::get('admin/password/reset', 'Admin\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
 // Route::post('admin-password/email', 'Admin\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
 // Route::get('admin/reset/password/{token}', 'Admin\ResetPasswordController@showResetForm')->name('admin.password.reset');

@@ -4,7 +4,7 @@
     </IfModule>
 
     RewriteEngine On
-    RewriteBase /
+   # RewriteBase /home/jbekvcgu/admin.voms.zetatransform.com/public/
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
