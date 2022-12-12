@@ -76,7 +76,7 @@ Route::get('admin/logout', [LogoutController::class, 'perform'])->name('admin.lo
 
 
 //Dashboard
-Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.home')->middleware('is_admin');
+Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.home');
 
 
 //States
@@ -159,4 +159,4 @@ Route::get('/rave/callback', [CertificatepayController::class, 'callback'])->nam
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [DashboardController::class, 'index'])->name('home');
