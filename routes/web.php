@@ -2,24 +2,25 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserTypeController;
-use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Admin\DonationController;
-use App\Http\Controllers\Admin\FlutterwaveController;
-use App\Http\Controllers\Admin\Location\StateController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\OwnerController;
 use App\Http\Controllers\DealerController;
 use App\Http\Controllers\VehicleController;
-use App\Http\Controllers\CertificateController;
+use App\Http\Controllers\UserTypeController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Admin\AdminController;
 Use Spatie\QueryBuilder\QueryBuilder;
 Use Spatie\QueryBuilder\AllowedFilter;
 Use App\Models\Owner;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\CertificateController;
+use App\Http\Controllers\Admin\DonationController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\FlutterwaveController;
 use App\Http\Controllers\Admin\CertificatepayController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\RoleController;
+use App\Http\Controllers\Admin\Location\StateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +46,7 @@ Route::group(['middleware' => ['auth']], function() {
     * Logout Route
     */
     Route::get('/logout', [LogoutController::class, 'perform'])->name('logout.perform');
+    Route::get('/', [LoginController::class, 'index']);
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
  });
