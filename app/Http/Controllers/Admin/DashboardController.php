@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use Illuminate\Support\Facades\View;
 use App\Models\User;
 use App\Models\State;
 use Illuminate\Http\Request;
