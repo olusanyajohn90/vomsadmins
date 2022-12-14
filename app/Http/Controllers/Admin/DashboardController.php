@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Support\Facades\View;
+// use Illuminate\Support\Facades\View;
 use App\Models\User;
 use App\Models\State;
 use Illuminate\Http\Request;
@@ -50,7 +50,7 @@ class DashboardController extends Controller
 
 
 
-         return view::make('admin.dashboard.all', compact('sumvehicles', 'sumcertificates', 'awaitinglicence'));
+         return view('admin.dashboard.all', compact('sumvehicles', 'sumcertificates', 'awaitinglicence'));
     }
 
 
