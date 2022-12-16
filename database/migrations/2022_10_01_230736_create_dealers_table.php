@@ -26,7 +26,7 @@ class CreateDealersTable extends Migration
             $table->integer('phone_number');
             $table->date('date_of_birth');
             $table->unsignedBigInteger('origin_state_id');
-            $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('origin_state_id')->references('id')->on('states')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
 
         });

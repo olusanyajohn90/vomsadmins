@@ -15,12 +15,12 @@ class CreateCertificatesTable extends Migration
     {
         Schema::create('certificates', function (Blueprint $table) {
             $table->id();
-            $table->int('registrayion_state_id');
+            $table->integer('registrayion_state_id');
             $table->string('cert_id');
-            $table->string('vehicle_id');
-            $table->foreign('vehicle_id')->references('vehicle_id')->on('vehicles');
+            $table->unsignedBigInteger('vehicle_id');
+            $table->foreign('vehicle_id')->references('id')->on('vehicles');
             $table->string('license_plate');
-            $table->int('payment_status_id');
+            $table->integer('payment_status_id');
             $table->date('start_date');
             $table->date('end_date');
             $table->unsignedBigInteger('issue_state_id');

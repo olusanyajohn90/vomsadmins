@@ -11,12 +11,12 @@
     <meta name="author" content="PIXINVENT">
 
     <title>VOMS Login</title>
-    <link rel="apple-touch-icon" href="{{  asset('public/backend/app-assets/images/ico/apple-icon-120.png')  }}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{  asset('public/backend/app-assets/images/ico/favicon.ico')  }}">
+    <link rel="apple-touch-icon" href="{{  asset('backend/app-assets/images/ico/apple-icon-120.png')  }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{  asset('backend/app-assets/images/ico/favicon.ico')  }}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/vendors/css/vendors.min.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/vendors/css/vendors.min.css')  }}">
 
 
 
@@ -24,30 +24,30 @@
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/bootstrap.css')  }}">
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/bootstrap-extended.css')  }}">
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/colors.css')  }}">
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/components.css')  }}">
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/themes/dark-layout.css')  }}">
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/themes/bordered-layout.css')  }}">
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/themes/semi-dark-layout.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/bootstrap.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/bootstrap-extended.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/colors.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/components.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/themes/dark-layout.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/themes/bordered-layout.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/themes/semi-dark-layout.css')  }}">
 
 
 
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/core/menu/menu-types/vertical-menu.css')  }}">
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/plugins/forms/form-validation.css')  }}">
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/pages/authentication.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/core/menu/menu-types/vertical-menu.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/plugins/forms/form-validation.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/pages/authentication.css')  }}">
 
 
-    {{-- <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/core/menu/menu-types/vertical-menu.css')  }}"> --}}
+    {{-- <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/core/menu/menu-types/vertical-menu.css')  }}"> --}}
 
 
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/assets/css/style.css')  }}">
-    {{-- <link rel="stylesheet" type="text/css" href="{{  asset('public/backend/app-assets/css/core/menu/menu-types/vertical-menu.css')  }}> --}}
+    <link rel="stylesheet" type="text/css" href="{{  asset('backend/assets/css/style.css')  }}">
+    {{-- <link rel="stylesheet" type="text/css" href="{{  asset('backend/app-assets/css/core/menu/menu-types/vertical-menu.css')  }}> --}}
     <!-- END: Custom CSS-->
 
 </head>
@@ -75,22 +75,22 @@
 
 
     <!-- BEGIN: Vendor JS-->
-    <script src="{{  asset('public/backend/app-assets/vendors/js/vendors.min.js')  }}"></script>
+    <script src="{{  asset('backend/app-assets/vendors/js/vendors.min.js')  }}"></script>
 
 
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="{{  asset('public/backend/app-assets/vendors/js/forms/validation/jquery.validate.min.js')  }}"></script>
+    <script src="{{  asset('backend/app-assets/vendors/js/forms/validation/jquery.validate.min.js')  }}"></script>
 
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
-    <script src="{{  asset('public/backend/app-assets/js/core/app-menu.js')  }}"></script>
-    {{-- <script src="{{  asset('public/backend/app-assets/vendors/js/jquery/jquery.min.js')  }}"></script> --}}
-    <script src="{{  asset('public/backend/app-assets/vendors/js/popper/popper.min.js')  }}"></script>
-    <script src="{{  asset('public/backend/app-assets/js/core/app.js')  }}"></script>
-    <script src="{{  asset('public/backend/app-assets/js/scripts/pages/auth-login.js')  }}"></script>
+    <script src="{{  asset('backend/app-assets/js/core/app-menu.js')  }}"></script>
+    {{-- <script src="{{  asset('backend/app-assets/vendors/js/jquery/jquery.min.js')  }}"></script> --}}
+    <script src="{{  asset('backend/app-assets/vendors/js/popper/popper.min.js')  }}"></script>
+    <script src="{{  asset('backend/app-assets/js/core/app.js')  }}"></script>
+    <script src="{{  asset('backend/app-assets/js/scripts/pages/auth-login.js')  }}"></script>
 
 
 

@@ -55,9 +55,6 @@ Route::get('/home', [DashboardController::class, 'index'])->name('home');
 
 
 
-
-
-
 //admin=======
 Route::get('admin/home', [AdminController::class, 'index']);
 // Route::get('admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
