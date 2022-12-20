@@ -132,13 +132,13 @@
                                  @enderror
                                 </div>
 
-                                <div class="mb-1">
+                                {{-- <div class="mb-1">
                                     <div class="d-flex justify-content-between">
                                         <label class="form-label" for="login-password">Password</label>
                                         <a href="auth-forgot-password-basic.html">
                                             <small>Forgot Password?</small>
                                         </a>
-                                    </div>
+                                    </div> --}}
                                     <div class="input-group input-group-merge form-password-toggle">
                                         <input type="password"  tabindex="2"
                                         id="password"  class="form-control @error('password') is-invalid @enderror form-control-merge" name="password" required autocomplete="current-password" />
@@ -163,14 +163,14 @@
 
 
 
-                                @if (Route::has('password.request'))
+                                {{-- @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
-                                @endif
+                                @endif --}}
                             </form>
 
-                            <p class="text-center mt-2">
+                            {{-- <p class="text-center mt-2">
                                 <span>New here?</span>
                                 <a href="auth-register-basic.html">
                                     <span>Create an account</span>
@@ -179,7 +179,7 @@
 
                             <div class="divider my-2">
                                 <div class="divider-text">or</div>
-                            </div>
+                            </div> --}}
 
 
                         </div>

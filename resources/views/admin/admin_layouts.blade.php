@@ -134,7 +134,7 @@
                                 height="40" width="40"><span class="avatar-status-online"></span></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user"><a
-                            class="dropdown-item" href="page-profile.html"><i class="me-50"
+                            class="dropdown-item" href="#"><i class="me-50"
                                 data-feather="user"></i> Profile</a><a class="dropdown-item"
                             href={{ URL::to('/admin/logout') }}><i class="me-50" data-feather="power"></i>
                             Logout</a>
