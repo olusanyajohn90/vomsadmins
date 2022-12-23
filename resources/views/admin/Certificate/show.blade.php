@@ -6,7 +6,7 @@
 
 @php
 
-$state = DB::table('states')->get()->first();
+// $state = DB::table('states')->get()->first();
 $payment_status = DB::table('payment_statuses')->get();
 $userstateid = Auth::user()->state_id;
         $userstate = DB::table('states')
@@ -60,7 +60,7 @@ $userstateid = Auth::user()->state_id;
             <div class="card">
 
                 <div class="card-body">
-                    
+
                     <form class="form" method="POST" action="{{ route('pay') }}" id="paymentForm">
                         {{ csrf_field() }}
                         <div class="row">
