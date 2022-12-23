@@ -229,7 +229,7 @@ class CertificateController extends Controller
 
 
 
-// dd($certificate);
+ dd($certificate);
 
         return view('admin.certificate.show', compact('certificate', 'state','certowned'));
     }
