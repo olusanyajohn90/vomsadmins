@@ -66,7 +66,7 @@ $userstateid = Auth::user()->state_id;
                             <div class="col-md-6 col-12">
                                 <div class="mb-1">
                                     <label class="form-label" for="first-name-column">State</label>
-                                    <br> <strong> {{ $state->name }} </strong>
+                                    <br> <strong> {{ $certificate->state }} </strong>
                                 </div>
                             </div>
 
