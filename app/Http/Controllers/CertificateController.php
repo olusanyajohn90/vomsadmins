@@ -203,7 +203,7 @@ class CertificateController extends Controller
 
     public function certificateView($id)
     {
-        $state = DB::table('states')->get();
+        $stateees = DB::table('states')->get();
 
 
         $certificate = DB::table('certificates')
@@ -231,7 +231,7 @@ class CertificateController extends Controller
 
 //  dd($certificate);
 
-        return view('admin.certificate.show', compact('certificate', 'state','certowned'));
+        return view('admin.certificate.show', compact('certificate', 'stateees','certowned'));
     }
 
 
