@@ -6,6 +6,9 @@
 
 @php
 
+$goat = $certificate->statement;
+
+
 // $state = DB::table('states')->get()->first();
 $payment_status = DB::table('payment_statuses')->get();
 $userstateid = Auth::user()->state_id;
@@ -13,7 +16,7 @@ $userstateid = Auth::user()->state_id;
         ->where('id', '=', $userstateid)
         ->get()->first();
 
-// Log::info($vowned);
+ Log::info($goat);
 
 @endphp
 
@@ -67,7 +70,7 @@ $userstateid = Auth::user()->state_id;
                             <div class="col-md-6 col-12">
                                 <div class="mb-1">
                                     <label class="form-label" for="first-name-column">State</label>
-                                    <br> <strong> {{ $certificate->statement }} </strong>
+                                    <br> <strong> {{ $goat }} </strong>
                                 </div>
                             </div>
 
