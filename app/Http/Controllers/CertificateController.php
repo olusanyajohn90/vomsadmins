@@ -214,7 +214,7 @@ class CertificateController extends Controller
             ->where('certificates.id', $id)
             ->first();
 
- dd($certificate->statement);
+//  dd($certificate->statement);
 
             $certid = $certificate->cert_id ;
             $certowned = DB::table('certificates')
