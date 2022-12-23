@@ -60,6 +60,7 @@ $userstateid = Auth::user()->state_id;
             <div class="card">
 
                 <div class="card-body">
+                    
                     <form class="form" method="POST" action="{{ route('pay') }}" id="paymentForm">
                         {{ csrf_field() }}
                         <div class="row">
