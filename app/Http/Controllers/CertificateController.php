@@ -210,7 +210,7 @@ class CertificateController extends Controller
         ->join('states', 'certificates.issue_state_id', 'states.id')
         ->join('payment_statuses', 'certificates.payment_status_id', 'payment_statuses.id')
 
-            ->select('certificates.*', 'states.name as state', 'payment_statuses.name as payment_status')
+            ->select('certificates.*', 'states.name as statement', 'payment_statuses.name as payment_status')
             ->where('certificates.id', $id)
             ->first();
 
@@ -229,7 +229,7 @@ class CertificateController extends Controller
 
 
 
-
+// dd($certificate);
 
         return view('admin.certificate.show', compact('certificate', 'state','certowned'));
     }
