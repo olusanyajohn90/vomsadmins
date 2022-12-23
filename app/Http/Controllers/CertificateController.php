@@ -216,13 +216,13 @@ class CertificateController extends Controller
 
 //  dd($certificate->statement);
 
-            $certid = $certificate->cert_id ;
-            $certowned = DB::table('certificates')
-            ->join('states', 'certificates.issue_state_id', 'states.id')
-            ->join('payment_statuses', 'certificates.payment_status_id', 'payment_statuses.id')
-            ->select('certificates.*', 'states.name' , 'payment_statuses.name')
-            ->where('certificates.cert_id', $certid)
-            ->get();
+            // $certid = $certificate->cert_id ;
+            // $certowned = DB::table('certificates')
+            // ->join('states', 'certificates.issue_state_id', 'states.id')
+            // ->join('payment_statuses', 'certificates.payment_status_id', 'payment_statuses.id')
+            // ->select('certificates.*', 'states.name' , 'payment_statuses.name')
+            // ->where('certificates.cert_id', $certid)
+            // ->get();
 
             //  dd($certowned);
             //  Log::info($certowned);
@@ -231,7 +231,7 @@ class CertificateController extends Controller
 
 //  dd($certificate);
 
-        return view('admin.certificate.show', compact('certificate', 'certowned'));
+        return view('admin.certificate.show', compact('certificate'));
     }
 
 
